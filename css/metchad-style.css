@@ -1,9 +1,10 @@
   @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
 
   body {
-    background: #ffffff;
+    background: #32a3dd;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    color: #fff;
   }
 
 
@@ -25,24 +26,25 @@
   }
 
   h1 {
-    color: #252525;
+    color: #022068;
     font-size: 5em;
   }
 
   h2 {
-    color: #272727;
+    color: #022068;
     font-size: 3em;
     padding-bottom: 10px;
   }
 
   h3 {
+    color: #022068;
     font-size: 1.8em;
     line-height: 1.2em;
     margin-bottom: 0;
   }
 
   h4 {
-    color: #454545;
+    color: #022068;
     font-size: 1.8em;
     padding-bottom: 2px;
   }
@@ -53,7 +55,7 @@
   }
 
   p {
-    color: #000;
+    /* color: #000; */
     font-size: 14px;
     font-weight: normal;
     line-height: 24px;
@@ -69,7 +71,7 @@
   }
 
   a {
-    color: #252525;
+    color: #fff;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     text-decoration: none !important;
@@ -203,16 +205,17 @@
 
   .navbar-header {
     height: max-content;
-}
+  }
 
   .navbar-brand {
     padding: 0%;
     height: 70px;
+    border: 5px solid #32a3dd;
     border-radius: 50%;
   }
 
   .navbar-default {
-    background: #87CEEB;
+    background: #fff;
     box-shadow: 0 2px 8px rgba(0,0,0,.075);
     border: none;
     margin-bottom: 0;
@@ -233,9 +236,9 @@
   }
 
   .navbar-default .navbar-nav li.navbar-btn a {
-    background: #feffff;
+    background-color: #32a3dd;
     border-radius: 5%;
-    color: #000000;
+    color: #fff;
     font-weight: 600;
     padding: auto;
   }
@@ -249,12 +252,11 @@
     color: #161f95;
     font-size: 12px;
     font-weight: 500;
-    padding: 0% 0%;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 1px 5px;
     margin: 15px 0px;
     -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
+    border-radius: 40px;
   }
 
   .navbar-default .navbar-nav > li a:hover {
@@ -280,7 +282,7 @@
   }
 
   .navbar-default .navbar-toggle .icon-bar {
-    background: #393939;
+    background: #32a3dd;
     border-color: transparent;
   }
 
@@ -327,6 +329,7 @@
     margin: 0 auto;
     max-height: 100%;
     max-width: 100%;
+    border: 3px solid #022068;
 }
 
     /*---------------------------------------
@@ -347,6 +350,10 @@
   .team-info p{
     justify-content: center;
     text-align: justify;
+  }
+
+  #team img{
+    border-radius: 50%;
   }
 
 
@@ -386,7 +393,7 @@
   }
 
   .contact-info .fa {
-    background: #1da1f2;
+    background: #022068;
     border-radius: 100%;
     color: #ffffff;
     font-size: 15px;
@@ -410,7 +417,7 @@
 
   .copyright-text p,
   .footer-link a {
-    color: #858585;
+    color: #fff;
     font-size: 12px;
     font-weight: 500;
   }
@@ -589,6 +596,10 @@
     #home h3 {
       font-size: 11px;
       letter-spacing: 1px;
+    }
+
+    #team h4,p{
+      font-size: small;
     }
 
   }
