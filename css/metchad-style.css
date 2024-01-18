@@ -658,13 +658,13 @@
       letter-spacing: 1px;
     }
 
-    #team h4,p{
+    #team h4{
       font-size: small;
     }
 
     .team-info p{
       justify-content: center;
-      font-size: 10px;
+      font-size: 5px;
       text-align: left;
     }
     #team_3, #team_4 {
