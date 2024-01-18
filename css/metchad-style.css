@@ -205,6 +205,9 @@
 
   .navbar-header {
     height: max-content;
+    padding-left: 0%;
+    padding-right: 0px;
+    float: right;
   }
 
   .navbar-brand {
@@ -213,6 +216,8 @@
     border: 5px solid #32a3dd;
     border-radius: 50%;
   }
+
+
 
   .navbar-default {
     background: #fff;
@@ -275,10 +280,13 @@
     color: #000080;
     background-color: transparent;
   }
+  
 
   .navbar-default .navbar-toggle {
     border: none;
     padding-top: 10px;
+    vertical-align: left;
+    background-color: #32a3dd;
   }
 
   .navbar-default .navbar-toggle .icon-bar {
@@ -291,7 +299,7 @@
     background-color: transparent;
   }
 
-  .navbar-collapse ul {
+  .collapse navbar-collapse ul {
     padding-top: 12px;
     margin: 0px;
     text-align: left;
@@ -320,15 +328,15 @@
   }
 
  .about-info {
-    margin: 0% 10%;
+    margin: 0% 0%;
   }
 
  #about img {
     padding: 0;
     display: block;
     margin: 0 auto;
-    max-height: 100%;
-    max-width: 100%;
+    /* max-height: 100%;
+    max-width: 100%; */
     border: 3px solid #022068;
 }
 
@@ -349,12 +357,17 @@
 
   .team-info p{
     justify-content: center;
-    text-align: justify;
+    text-align: left;
   }
 
   #team img{
     border-radius: 50%;
   }
+
+  .team-info a {
+    color: #000000;
+  }
+
 
 
   /*---------------------------------------
@@ -367,6 +380,102 @@
     padding: 2% 0% 4% 0%;
     }
 
+  /*---------------------------------------
+    PARTENAIRES CAROUSEL          
+  ----------------------------------------*/
+  .carousel-item img{
+    border: 5px solid #32a3dd;
+    border-radius: 50%;
+    size: 50%;
+    padding-left: 22%;
+    padding-right: 22%;
+  }
+
+  .carousel-item image{
+    width: 50%;
+    height: 80%;
+  }
+
+  .carousel-item{
+    /* padding-left: 10%; */
+    float:center;
+  }
+
+
+
+  @media (max-width: 767px) {
+		.carousel-inner .carousel-item > div {
+			display: block;
+		}
+		.carousel-inner .carousel-item > div:first-child {
+			display: block;
+		}
+	}
+
+	.carousel-inner .carousel-item.active,
+	.carousel-inner .carousel-item-next,
+	.carousel-inner .carousel-item-prev {
+		display: flex;
+	}
+
+	/* medium and up screens */
+	@media (min-width: 768px) {
+
+		.carousel-inner .carousel-item-end.active,
+		.carousel-inner .carousel-item-next {
+			transform: translateX(25%);
+		}
+
+		.carousel-inner .carousel-item-start.active, 
+		.carousel-inner .carousel-item-prev {
+			transform: translateX(-25%);
+		}
+	}
+
+	.carousel-inner .carousel-item-end,
+	.carousel-inner .carousel-item-start { 
+		transform: translateX(0);
+	}
+
+
+
+
+    /* .multi-item-carousel{
+      .carousel-inner{
+        > .item{
+          transition: 500ms ease-in-out left;
+        }
+        .active{
+          &.left{
+            left:-33%;
+          }
+          &.right{
+            left:33%;
+          }
+        }
+        .next{
+          left: 33%;
+        }
+        .prev{
+          left: -33%;
+        }
+        @media all and (transform-3d), (-webkit-transform-3d) {
+          > .item{
+            transition: 500ms ease-in-out left;
+            transition: 500ms ease-in-out all;
+            backface-visibility: visible;
+            transform: none!important;
+          }
+        }
+      }
+      .carouse-control{
+        &.left, &.right{
+          background-image: none;
+        }
+      }
+    } */
+    
+  
   /*---------------------------------------
      FOOTER              
   -----------------------------------------*/
@@ -429,7 +538,7 @@
     margin-top: 4px;
   }
 
-  .angle-up-btn {
+  /* .angle-up-btn {
     position: relative;
     bottom: 4em;
     display: block;
@@ -454,7 +563,7 @@
     background: #4267b2;
     color: #ffffff;
     transform: translateY(-5px);
-  }
+  } */
 
 
   /*---------------------------------------
@@ -522,6 +631,14 @@
       padding-right: 15px;
       padding-left: 15px;
     }
+
+    #infoEducatives, #infoSociales, #accompagnement {
+      padding: 0% 10%;
+    }
+
+    #apropos {
+      padding: 5% 10% 0% 10%;
+    }
   }
 
   @media only screen and (max-width: 992px) {
@@ -539,6 +656,14 @@
       padding-top: 0;
       padding-left: 0;
       padding-bottom: 0;
+    }
+
+    #info_educatives, #info_sociales, #accompagnement {
+      padding: 0% 10%;
+    }
+
+    #apropos {
+      padding: 5% 10% 0% 10%;
     }
   }
 
@@ -579,6 +704,14 @@
     .angle-up-btn {
       bottom: 10em;
     }
+
+    #info_educatives, #info_sociales, #accompagnement {
+      padding: 0% 10%;
+    }
+
+    #apropos {
+      padding: 5% 10% 0% 10%;
+    }
   }
 
   @media only screen and (max-width: 639px) {
@@ -601,5 +734,15 @@
     #team h4,p{
       font-size: small;
     }
+
+    .team-info p{
+      justify-content: center;
+      font-size: 10px;
+      text-align: left;
+    }
+    #team_3, #team_4 {
+      padding-top: 5%;
+    }
+
 
   }
