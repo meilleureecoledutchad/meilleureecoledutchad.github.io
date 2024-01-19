@@ -343,20 +343,20 @@
       EQUIPE              
   -----------------------------------------*/
 
-  #team {
+  .team-info {
     padding: 10px 0px;
   }
 
-  #team p{
+  .team-info p{
     justify-content: center;
-    text-align: justify;
+    text-align: left;
   }
 
   #team img{
     border-radius: 50%;
   }
 
-  #team a {
+  .team-info a {
     color: #000000;
   }
 
@@ -662,10 +662,10 @@
       font-size: small;
     }
 
-    #team p{
+    .team-info p{
       justify-content: center;
       font-size: 5px;
-      text-align: justify;
+      text-align: left;
     }
     #team_3, #team_4 {
       padding-top: 5%;
