@@ -1,7 +1,7 @@
   @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
 
   body {
-    background: #32a3dd;
+    background: #032C7E;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     color: #fff;
@@ -37,14 +37,14 @@
   }
 
   h3 {
-    color: #022068;
+    color: #FFE226;
     font-size: 1.8em;
     line-height: 1.2em;
     margin-bottom: 0;
   }
 
   h4 {
-    color: #022068;
+    color: #FFE226;
     font-size: 1.8em;
     padding-bottom: 2px;
   }
@@ -135,7 +135,7 @@
   }
 
   .btn-blue {
-    background: #4267b2;
+    background: #032C7E;
   }
 
 
@@ -176,13 +176,15 @@
 
   header a,
   header span {
-    color: #000;
+    color: #fff;
+    background: #032C7E;
   }
 
   header span {
     font-weight: 500;
     display: inline-block;
-    padding: 11px 15px;
+    padding: 0px 0px;
+    margin-top: 10px;
   }
 
   header span.date-icon {
@@ -212,9 +214,9 @@
 
   .navbar-brand {
     padding: 0%;
-    height: 70px;
-    border: 5px solid #32a3dd;
-    border-radius: 50%;
+    height: 100px;
+    border: 3px solid #FFE226;
+    /*border-radius: 50%; */
   }
 
 
@@ -241,7 +243,7 @@
   }
 
   .navbar-default .navbar-nav li.navbar-btn a {
-    background-color: #32a3dd;
+    background-color: #032C7E;
     border-radius: 5%;
     color: #fff;
     font-weight: 600;
@@ -326,6 +328,10 @@
     padding-bottom: 0px;
   }
 
+  #apropos {
+      padding-top: 3%;
+  }
+
  .about-info {
     margin: 0% 0%;
   }
@@ -333,10 +339,10 @@
  #about img {
     padding: 10;
     display: block;
-    margin: 4 auto;
-    max-height: 70%;
-    max-width: 70%;
-    border: 3px solid #022068;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+    border: 15px solid #FFE226;
 }
 
     /*---------------------------------------
@@ -376,7 +382,7 @@
     PARTENAIRES CAROUSEL          
   ----------------------------------------*/
   .carousel-item img{
-    border: 5px solid #32a3dd;
+    /*border: 5px solid #32a3dd;*/
     border-radius: 50%;
     size: 50%;
     padding-left: 22%;
